@@ -1,31 +1,29 @@
-body {background-color:white; 
-margin:3em;
 
+:root {
+  --serif: 'Newsreader', Georgia, serif;
+  --ink: #23271f;
 }
-
-p {display:block;}
-
 
 p.navigation {
 display:block;
 font-weight:bold;
 }
 
-page-title{
+.page-title{
     padding: 40px 0 8px;
     max-width: 640px;
 }
 
-content{
+.content{
     max-width: 640px; /* keeps line length readable/wraps text */
     padding-bottom: 64px
 }
 
-content section{
+.content section{
     margin-bottom: 40px
 }
 
-page-title h2{
+.page-title h2{
     font-family: var(--serif);
     font-weight: 500;
     font-size: 32px;
