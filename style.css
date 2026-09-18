@@ -18,7 +18,7 @@ page-title{
 
 content{
     max-width: 640px; /* keeps line length readable/wraps text */
-    padding-bottom:: 64px
+    padding-bottom: 64px
 }
 
 content section{
@@ -31,8 +31,6 @@ page-title h2{
     font-size: 32px;
     color: var(--ink);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap');
 
 site-title {
   text-align: center;
