@@ -32,7 +32,7 @@ page-title h2{
     color: var(--ink);
 }
 
-site-title {
+.site-title {
   text-align: center;
   font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
   font-weight: 500;
@@ -40,8 +40,27 @@ site-title {
   padding: 48px 0;
 }
 
-topnav {
+.topnav {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid #c9c2ab;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #23271f;
+  font-size: 15px;
+  padding: 4px 0;
+}
+
+.topnav a:hover {
+  color: #8a6a34;
+}
+
+.topnav a.active {
+  font-weight: 600;
+  color: #8a6a34;
+  border-bottom: 2px solid #8a6a34;
 }
