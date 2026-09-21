@@ -19,12 +19,21 @@
         <h1 class="site-title">Database</h1>
         <p>here will be a link/embedded file of the database that I have created.</p>
         <script>
+            
+            
 let allChildren = [];
+function renderList(children) {
+  document.getElementById('result-count').textContent = children.length + ' records';
 
+  document.getElementById('results-list').innerHTML = children.map(function(person) {
+    return '<div>' + person.Name + ' — ' + person.Institutions + '</div>';
+  }).join('');
+}
 fetch('children.json')
   .then(function(response) { return response.json(); })
   .then(function(data) {
     allChildren = data;
+      renderList(allChildren);
     console.log(allChildren);
   });
 </script>
