@@ -63,11 +63,7 @@ font-weight:bold;
   border-bottom: 2px solid #8a6a34;
 }
 
-/* ======================================================================
-   Paste this into your existing style.css — it only adds the hero
-   section. Your existing .site-title, .topnav, .content, and
-   .page-title rules don't need to change at all.
-   ====================================================================== */
+
 
 .hero {
   position: relative;
@@ -85,10 +81,6 @@ font-weight:bold;
   background-position: center;
 }
 
-/* the "flowing gradient" — a see-through layer sitting on top of the
-   photo, fading from mostly-transparent at the top to fully your page
-   background color at the bottom, so the image dissolves into the
-   page instead of ending in a hard edge */
 .hero::after {
   content: "";
   position: absolute;
