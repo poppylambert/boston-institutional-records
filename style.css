@@ -97,7 +97,7 @@ font-weight:bold;
 .hero-content {
   position: relative;
   z-index: 1;         /* keeps this above the ::after gradient */
-  max-width: 600px;nehlw
+  max-width: 600px;
   padding: 24px;
 }
 
@@ -119,4 +119,11 @@ font-weight:bold;
 
 .cta-button:hover {
   background: #8a6a34;
+}
+
+.text-block {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
 }
