@@ -14,10 +14,12 @@ font-weight:bold;
     max-width: 640px;
 }
 
-.content{
-    max-width: 640px; 
-    padding-bottom: 64px
+    .content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 64px;
 }
+
 
 .content section{
     margin-bottom: 40px
@@ -74,8 +76,6 @@ font-weight:bold;
   align-items: center;
   text-align: center;
   overflow: hidden;
-
-  /* swap this for your own uploaded photo, e.g. images/reading-room.jpg */
   background-image: url('images/nehlwimage.jpg');
   background-size: cover;
   background-position: center;
