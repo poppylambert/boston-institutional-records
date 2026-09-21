@@ -23,39 +23,11 @@
       <iframe 
         class="nc-embed" 
         src="https://app.nocodb.com/nc/view/429a000e-2d8a-409e-8afd-6a6914523619" 
-        width="100" 
+        width="700" 
         height="700" 
         style="background: transparent; border: 1px solid #ddd">
       </iframe>
       
-        <script>
-            
-            
-let allChildren = [];
-function renderList(children) {
-  document.getElementById('result-count').textContent = children.length + ' records';
-
-  document.getElementById('results-list').innerHTML = children.map(function(person) {
-    return '<div>' + person.Name + ' — ' + person.Institutions + '</div>';
-  }).join('');
-}
-fetch('children.json')
-  .then(function(response) { return response.json(); })
-  .then(function(data) {
-    allChildren = data;
-      renderList(allChildren);
-    console.log(allChildren);
-  });
-  
-  document.getElementById('search-box').addEventListener('input', function(e) {
-  const query = e.target.value.toLowerCase();
-
-  const matches = allChildren.filter(function(person) {
-    return person.Name.toLowerCase().includes(query);
-  });
-
-  renderList(matches);
-});
-</script>
+       
     </body>
 </html>
