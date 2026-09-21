@@ -98,7 +98,7 @@ font-weight:bold;
   position: relative;
   z-index: 1;         /* keeps this above the ::after gradient */
   max-width: 600px;nehlw
-  padding: 0 24px;
+  padding: 24px;
 }
 
 .hero-tagline {
