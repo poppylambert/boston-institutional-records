@@ -18,5 +18,15 @@
         </div>
         <h1 class="site-title">Database</h1>
         <p>here will be a link/embedded file of the database that I have created.</p>
+        <script>
+let allChildren = [];
+
+fetch('children.json')
+  .then(function(response) { return response.json(); })
+  .then(function(data) {
+    allChildren = data;
+    console.log(allChildren);
+  });
+</script>
     </body>
 </html>
