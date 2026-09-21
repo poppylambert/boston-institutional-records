@@ -76,7 +76,7 @@ font-weight:bold;
   overflow: hidden;
 
   /* swap this for your own uploaded photo, e.g. images/reading-room.jpg */
-  background-image: url('NEHLWIMAGE.jpg');
+  background-image: url('images/nehlwimage.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -97,7 +97,7 @@ font-weight:bold;
 .hero-content {
   position: relative;
   z-index: 1;         /* keeps this above the ::after gradient */
-  max-width: 600px;
+  max-width: 600px;nehlw
   padding: 0 24px;
 }
 
