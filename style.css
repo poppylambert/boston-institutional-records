@@ -62,3 +62,69 @@ font-weight:bold;
   color: #8a6a34;
   border-bottom: 2px solid #8a6a34;
 }
+
+/* ======================================================================
+   Paste this into your existing style.css — it only adds the hero
+   section. Your existing .site-title, .topnav, .content, and
+   .page-title rules don't need to change at all.
+   ====================================================================== */
+
+.hero {
+  position: relative;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+  /* swap this for your own uploaded photo, e.g. images/reading-room.jpg */
+  background-image: url('images/your-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* the "flowing gradient" — a see-through layer sitting on top of the
+   photo, fading from mostly-transparent at the top to fully your page
+   background color at the bottom, so the image dissolves into the
+   page instead of ending in a hard edge */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 1) 92%
+  );
+  pointer-events: none;  /* lets clicks pass through to whatever's underneath */
+
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;         /* keeps this above the ::after gradient */
+  max-width: 600px;
+  padding: 0 24px;
+}
+
+.hero-tagline {
+  font-size: 18px;
+  color: #5b5c52;
+  margin: 20px 0 32px;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #23271f;
+  color: #f7f4ec;
+  padding: 12px 28px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.cta-button:hover {
+  background: #8a6a34;
+}
