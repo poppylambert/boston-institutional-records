@@ -36,6 +36,16 @@ fetch('children.json')
       renderList(allChildren);
     console.log(allChildren);
   });
+  
+  document.getElementById('search-box').addEventListener('input', function(e) {
+  const query = e.target.value.toLowerCase();
+
+  const matches = allChildren.filter(function(person) {
+    return person.Name.toLowerCase().includes(query);
+  });
+
+  renderList(matches);
+});
 </script>
     </body>
 </html>
