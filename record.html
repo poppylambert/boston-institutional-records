@@ -35,7 +35,12 @@
 box.innerHTML =
   '<h1>' + person.Name + '</h1>' +
   '<p>Institution: ' + person.Institutions + '</p>' +
-  '<p>Date admitted: ' + person.DateAdmitted + '</p>';v
+  '<p>Date admitted: ' + person.DateAdmitted + '</p>';
+  box.innerHTML += '<h2>Heard From</h2>';
+
+personEvents.forEach(function(e) {
+  box.innerHTML += '<p>' + e.date + ': ' + e.note + '</p>';
+});
 });
         </script>
     </body>
