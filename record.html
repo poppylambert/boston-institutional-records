@@ -16,9 +16,15 @@
             <div id="record-info"></div>
         </div>
         <script>
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get('id');
-        console.log(id);
+       Promise.all([
+  fetch('children.json').then(function(res) { return res.json(); }),
+  fetch('heard_from.json').then(function(res) { return res.json(); })
+]).then(function(results) {
+  const people = results[0];
+  const events = results[1];
+  console.log(people);
+  console.log(events);
+});
         </script>
     </body>
 </html>
