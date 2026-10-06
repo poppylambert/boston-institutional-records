@@ -30,8 +30,12 @@
     return e['FULL CHILD DATABASE PL (in progress1'] === id;
   });
 
-  console.log(person);
-  console.log(personEvents);
+  const box = document.getElementById('record-info');
+
+box.innerHTML =
+  '<h1>' + person.Name + '</h1>' +
+  '<p>Institution: ' + person.Institutions + '</p>' +
+  '<p>Date admitted: ' + person.DateAdmitted + '</p>';v
 });
         </script>
     </body>
