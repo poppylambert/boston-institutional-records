@@ -15,5 +15,10 @@
         <div class="content">
             <div id="record-info"></div>
         </div>
+        <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        console.log(id);
+        </script>
     </body>
 </html>
