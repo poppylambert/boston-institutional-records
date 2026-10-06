@@ -16,14 +16,20 @@
             <div id="record-info"></div>
         </div>
         <script>
-       Promise.all([
+      Promise.all([
   fetch('children.json').then(function(res) { return res.json(); }),
   fetch('heard_from.json').then(function(res) { return res.json(); })
 ]).then(function(results) {
   const people = results[0];
   const events = results[1];
-  console.log(people);
-  console.log(events);
+
+  const person = people.find(function(p) { return p.PersonID === id; });
+  const personEvents = events.filter(function(e) {
+    return e['FULL CHILD DATABASE PL (in progress1'] === id;
+  });
+
+  console.log(person);
+  console.log(personEvents);
 });
         </script>
     </body>
